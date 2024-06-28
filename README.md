@@ -1,5 +1,4 @@
 # OOPS Project
-================
 
 This project is an implementation of a basic banking system using Object-Oriented Programming (OOP) concepts in Java. The system allows users to sign up, log in, deposit money, make transactions, check balance, and view transaction history.
 
