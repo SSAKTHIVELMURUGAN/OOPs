@@ -1,0 +1,75 @@
+Object has the default value is zero
+
+Why we need to go for OOPS?
+    - enhance the code reusability and save development time
+    Programming two types
+        1. Procedural(C,C++)
+        2. Object Oriented
+    To deal with real time problem we use object Oriented
+    in Procedural we have some difficulty
+
+Class and Object
+    Object is a instance of a Class
+    Class is a template or blueprint it has the several details reqiured for the problem
+
+   - Data Members (also known as fields, variables, attributes)  
+        These are the variables in a class that hold the data or state of an object. They store the object's data (e.g., color, size in a Car class).
+   - Member Functions (also known as methods, functions):
+        These are the functions in a class that define the behavior or actions that can be performed on the data members. They define the actions that can be performed on the attributes (e.g., start(), stop() in a Car class).
+
+Access Modifer
+    this says whether the fields or members where we can access and where we cant access
+    
+    Types 
+        Public - access anywhere in class,file
+        Protected - access anywhere in class and only within a file, We can access it by inherit to other class in another file
+        Private - access only within the Single class, We can access the private only by creating methods in a particular class 
+
+Constructor
+    the name of the class we have created the constructor with same name of the class is known as Constructor
+    In constructor we dont declare the return data type, it will have only the name of the class
+    Types
+        - Default Constructor
+        - Parameterized Constructor
+   *** To understand better compare the methods and constructor ***
+
+Four Pillar of OOPS:
+   1. Encapuslation:
+        It's a set of data that are related together and come under the topics of single concept is Encapuslation
+        Ex: in application is a class it has the many functionality like getvalue putvalue setvalue insert delete update like these many operations are come under in a single concept is the Encapuslation
+   2. Abstraction:
+        Data Hiding - Hiding the unnecessary data from the user 
+        Ex: the car has the accelator part and brake driver need to known only to accelate and brake dont need to know how they flows like "if we put the accelator the signal send to engine the fuel 
+        liquid flows the champer are start the car make sound the tier get rotated" these details are no need this is how the Abstraction know only the essential things
+        ** Real time example **:
+            In banking sector the account number, balance need to only know for the particular user dont need to know for other third user so we need to hide the data from the third party user so we use access modifer to hide the data for this Abstraction helps for the security and privacy
+   3. Inheritance:
+        In Inheritance we use the one class structure can inherit to another class as using "extends" keyword
+        super class/ parent class/ base class
+        Inherited class --> subclass/ child class
+        Types:
+            1- Single Inheritance: Single parent single child
+            2- Multi-level Inheritance: Three stage of class eg(grand father, father, son)
+            3- Hierachy Inheritance: Single parent multiple child 
+            4- Hybrid Inheritance: Combination of any other types
+            5- Multiple Inheritance: Two parent one child (Directly not supported to java)
+
+   4. Polymorphism:
+        Many + forms ---> the single method has the differnet forms
+        i) Method Overloading:  Same functions name but differnet number of arguments are called method Overloading.(To say correctly it has same methods name the signature of the methods are different)
+            Ex: In built in function they use the method Overloading concept because if we take Math.min() we can pass the array or even digit so compare of this two arguments are differ so the has method Overloading
+        ii) Method Overriding: In normal Inheritance concept we inherit the parent class to child class so we will do some changes in child class the output also will take the child class not only in class we also use in methods thats why this is known as methods Overriding
+
+Abstraction classes and Abstraction Method:
+    In Abstraction classes we cant create a object
+    In Abstraction Method we can define it in Abstraction class itself so where ever we inherit the abstract class we cant ignore the abstract method it shows the error 
+    in abstract method only we have function declaration 
+
+Interface:
+    Similar to class but in body on the interface only contains abstract methods
+    To inherit the abstract class to another class we use the keyword "implements" in class inherit to another class means we use the "extends" but in abstrat its differnet
+
+
+Multiple Inheritance:
+    In multiple Inheritance we cant use in class because **"class cant extend the multiple classes"**
+    So in interface we can do this by the abstraction 
